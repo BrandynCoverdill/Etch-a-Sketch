@@ -17,6 +17,7 @@ function formatGrid(container) {
 		grid-template-rows: repeat(${height}, 1fr);
 		border: 10px solid #01243B;
 		margin: 1em auto;
+		background: black;
 	`;
 }
 
@@ -58,12 +59,14 @@ function formatGridItems() {
 	for (let i = 0; i < gridItems.length; i++) {
 		gridItems[i].style.cssText = `
 			background: white;
+			opacity: 1;
 		`;
 
 		gridItems[i].addEventListener('mouseenter', () => {
 			gridItems[i].style.cssText += `
-				background: black;
+				background: #${Math.floor(Math.random() * 16777215).toString(16)};
 			`;
+			gridItems[i].style.opacity -= 0.1;
 		});
 	}
 }
