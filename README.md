@@ -1,7 +1,7 @@
 # Etch-a-Sketch
 
 >[!NOTE]
-> This application works best with a mouse! It uses the :hover selector which is hard to replicate on mobile.
+> This application works best with a mouse! It uses the "mouseenter" event which is hard to replicate on mobile.
 
 ## [Live Site](https://brandyncoverdill.github.io/Etch-a-Sketch/)
 
