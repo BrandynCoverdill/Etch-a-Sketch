@@ -71,6 +71,14 @@ function formatGridItems() {
 // Create button and append to the top of the screen
 const button = document.createElement('button');
 button.textContent = 'Change grid size';
+
+// Style button
+button.style.cssText = `
+	padding: .5em 1em;
+	font-weight: bold;
+	cursor: pointer;
+`;
+
 header.appendChild(button);
 
 // Grab user input so the grid can be the size the user wants
