@@ -81,7 +81,7 @@ button.addEventListener('click', () => {
 	temp = temp.trim();
 
 	// Check if user input is a number and less than or equal to 100
-	if (isNaN(temp) || temp > 100) {
+	if (isNaN(temp) || temp > 100 || temp < 1) {
 		alert('Please enter a valid number less than or equal to 100.');
 		return;
 	}
